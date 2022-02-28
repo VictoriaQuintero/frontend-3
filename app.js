@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+  // ----------SLIDER----------------------
   let div = $('.div-sliders');
   let divs = div.find('div[id=sliders]').length;
   let auto=0;
@@ -35,6 +35,43 @@ $(document).ready(function () {
         $('div[id=sliders]:first').insertAfter('div[id=sliders]:last');
         div.css({left: '-100%'});
       })
+    }
+  }, 3000);
+  // ----------------------CARRUSEL------------------------
+  let contenedor = $('.contenedor-servicios');
+  let servicios = contenedor.find('div[class=servicios]').length;
+  let cont=0;
+  console.log(contenedor.css({width: servicios * 20 + '%'}));
+  contenedor.css({left:'-20%'});
+
+  $('#buttonLeft').click(function () { 
+    contenedor.animate({
+      left:0
+    },900,function(){
+      $('div[class=servicios]:last').insertBefore('div[class=servicios]:first');
+      contenedor.css({left:'-20%'});
+    })
+    cont=0;
+  });
+  $('#buttonRight').click(function () { 
+    contenedor.animate({
+      left:'-40%'
+    },900,function(){
+      $('div[class=servicios]:first').insertAfter('div[class=servicios]:last');
+      contenedor.css({left:'-20%'});
+    }) 
+    cont=0;
+  });
+
+  setInterval(() => {
+    cont++;
+    if(cont>1){
+      contenedor.animate({
+        left:'-40%'
+      },900,function(){
+        $('div[class=servicios]:first').insertAfter('div[class=servicios]:last');
+        contenedor.css({left:'-20%'});
+      }) 
     }
   }, 3000);
   // ----------------------------------------------------
