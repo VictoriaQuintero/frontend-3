@@ -13,12 +13,15 @@ header nav{
     justify-content: space-between;
     align-items:center;
     z-index: 1;
+    width: 100%;
+    height: 30%;
     transition: 0.6s;
-    padding:0 5rem;
+    padding: 0rem;
 }
 
 header nav img{
-    width: 20%;
+    width: 15%;
+    height: 100%;
     margin-left: 2rem;
 }
 header nav ul{
@@ -42,13 +45,17 @@ header nav ul i{
 
 .sticky{
     background-color: #286ebf;
-    height: 6rem;
+    height: 15%;
 }
 .sticky ul li{
     color:white;
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0 1rem;
+}
+.sticky img{
+    width:10%;
+    margin-left: 2rem;
 }
 header .div-padre #sliders{
     width: 100%;
