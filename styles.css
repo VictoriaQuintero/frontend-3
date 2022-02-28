@@ -235,20 +235,22 @@ header .infoHeader button:hover{
 .section1 .button-lados #buttonLeft,
 .section1 .button-lados #buttonRight{
     cursor:pointer;
-    display: flex;
-    align-items: center;
-    justify-content: center;
     width: 5rem;
     height: 5rem;
-    background-color: #d3d3d38f;
     position: absolute;
     top:30%;
     font-size: 3rem;
 }
 .section1 .button-lados #buttonLeft{
+    display: flex;
+    align-items: center;
+    justify-content: left;
     left: 0;
 }
 .section1 .button-lados #buttonRight{
+    display: flex;
+    align-items: center;
+    justify-content: right;
     right: 0;
 }
 
