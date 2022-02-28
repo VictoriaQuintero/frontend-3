@@ -3,11 +3,8 @@
     padding:0;
     font-size:10px;
 }
-
 header{
-    background-image: url('img/img1-doctor.jpg');
-    background-position: center;
-    background-size: cover;
+    display: flex;
 }
 
 header nav{
@@ -52,6 +49,54 @@ header nav ul i{
     font-size: 1.2rem;
     font-weight: bold;
     padding: 0 1rem;
+}
+header .div-padre #sliders{
+    width: 100%;
+}
+header .div-padre{
+    width: 100%;
+    position: relative;
+   overflow: hidden;
+}
+header .div-padre .div-sliders{
+    position: relative;
+    display: flex;
+ 
+}
+header .div-padre .botones-lados #botonLeft,
+header .div-padre .botones-lados #botonRight{
+    cursor:pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: #d3d3d38f;
+    color: #286ebf;
+    position: absolute;
+    top:50%;
+    font-size: 3rem;
+}
+header .div-padre .botones-lados #botonLeft{
+    left: 2rem;
+}
+header .div-padre .botones-lados #botonRight{
+    right: 2rem;
+}
+header .slider1{
+    background-image: url('img/img1-doctor.jpg');
+    background-position: center;
+    background-size: cover;
+}
+header .slider2{
+    background-image: url('https://images.pexels.com/photos/8636601/pexels-photo-8636601.jpeg?cs=srgb&dl=pexels-kampus-production-8636601.jpg&fm=jpg');
+    background-position: center;
+    background-size: cover;
+}
+header .slider3{
+    background-image: url('https://images.pexels.com/photos/127873/pexels-photo-127873.jpeg?cs=srgb&dl=pexels-oles-kanebckuu-127873.jpg&fm=jpg');
+    background-position: center;
+    background-size: cover;
 }
 
 header .infoHeader{
