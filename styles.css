@@ -1,9 +1,10 @@
-*{
+ *{
     margin:0;
     padding:0;
-    font-size:10px;
+    font-size:7px;
 }
 header{
+    width: 100%;
     display: flex;
 }
 
@@ -14,61 +15,71 @@ header nav{
     align-items:center;
     z-index: 1;
     width: 100%;
-    height: 30%;
+    height: 5%;
     transition: 0.6s;
     padding: 0rem;
 }
 
 header nav img{
-    width: 15%;
+    width: 20%;
     height: 100%;
     margin-left: 2rem;
 }
-header nav ul{
-    display: flex;
-    justify-content: right;
+header nav .nav-side{
+    display: block;
+    background-color: #bbbbbbd0;
+    position: absolute;
+    top:0;
+    left: 0;
     list-style: none;
-    align-items: center; 
+    padding: 4rem;
+    transform: translateX(-200px);
 }
 header nav ul a,
 header nav ul li{
     text-decoration: none;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif; 
-    color: #2e61da;
+    color: #1f408f;
     font-size: 1.5rem;
+    text-align: center;
     font-weight: bold;
-    padding: 0.2rem;
+    padding: 0.7rem;
 }
-header nav ul i{
-    font-size: 2rem;
+header nav i{
+    font-size: 3rem;
+    margin:0  5rem;
+    color: #2e61da;
+    cursor:pointer;
 }
 
 .sticky{
     background-color: #286ebf;
-    height: 15%;
+    height: 5%;
 }
 .sticky ul li{
     color:white;
-    font-size: 1.2rem;
     font-weight: bold;
-    padding: 0 1rem;
+
 }
 .sticky img{
-    width:10%;
+    width:17%;
     margin-left: 2rem;
 }
-header .div-padre #sliders{
-    width: 100%;
+.sticky i{
+    color:white;
 }
 header .div-padre{
     width: 100%;
     position: relative;
-   overflow: hidden;
+    overflow: hidden;
 }
 header .div-padre .div-sliders{
     position: relative;
     display: flex;
- 
+}
+header .div-padre #sliders{
+    position: relative;
+    width: 100%;
 }
 header .div-padre .botones-lados #botonLeft,
 header .div-padre .botones-lados #botonRight{
@@ -107,7 +118,7 @@ header .slider3{
 }
 
 header .infoHeader{
-    width: 50%;
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +128,7 @@ header .infoHeader{
 }
 header .infoHeader h1{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 3.5rem;
+    font-size: 3rem;
     color: #2c2828;
     text-align: center;
     padding-bottom: 1rem;
@@ -126,7 +137,7 @@ header .infoHeader h1{
 
 header .infoHeader h2{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 2.5rem;
+    font-size: 2rem;
     color: #646464;
     text-align: center;
     padding-bottom: 1rem;
@@ -134,7 +145,7 @@ header .infoHeader h2{
 
 header .infoHeader p{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: #286ebf;
     text-align: center;
     padding-bottom: 1rem;
@@ -161,7 +172,7 @@ header .infoHeader button:hover{
         opacity: 1;
     }
     70%{ 
-        transform: translate(0,30px);
+        transform: translate(0,3rem);
         opacity: 1;
     }
     100%{
@@ -212,18 +223,18 @@ header .infoHeader button:hover{
     font-size: 4rem;
 }
 .section1{
-    margin: 5rem 6rem 0 6rem;
+    margin: 5rem 2rem 0 2rem;
 }
 .section1 h2{
     color: #286ebf;
     font-family:"Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size:2rem;
+    font-size:3rem;
     text-align:center;
     padding:2rem;
 }
 .section1 p{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2rem;
     text-align: center;
     padding-bottom: 2rem;
 }
@@ -285,30 +296,30 @@ header .infoHeader button:hover{
     margin: 8rem 3rem 0 3rem;
 }
 .section1 .imagenText img{
-    width: 25rem;
-    margin-right: 1rem;
+    width: 0;
 }
 
 .section1 .imagenText div p,
 .section1 .imagenText div strong{
     text-align: justify;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size:1.5rem;
+    font-size:3rem;
     color: black;
 }
 .section1 .imagenText div p a{
     text-decoration: none;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size:1.5rem;
+    font-size:3rem;
     color:  #286ebf;
 }
 
 .section1 .imagenText div .menuDesplegable i{
+    font-size: 2rem;
     background-color: #286ebf;
     color:  white;
     border-radius: 50%;
-    height: 2rem;
-    width: 2rem;
+    height: 3rem;
+    width: 3rem;
     margin-right: 1rem;
     display: flex;
     align-items: center;
@@ -323,21 +334,21 @@ header .infoHeader button:hover{
 }
 .section1 .imagenText div .menuDesplegable li{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
     padding-bottom: 2rem;    
     border-bottom: 0.1em solid #d7dbdd;
     width: 100%;
-    height: 1rem;
+    height: 6rem;
     margin-bottom: 1rem;
 }
 .section1 .menuDesplegable a{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     display: flex;
     color: black;
     text-decoration: none;
 }
 .section2{
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items:center;
@@ -347,6 +358,7 @@ header .infoHeader button:hover{
     background-color: #286ebf; 
     width: 100%;
     display:flex;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: center;
     padding: 1.5rem 0;
@@ -363,7 +375,7 @@ header .infoHeader button:hover{
 .section2 .numeros div i,
 .section2 .numeros div h3{
     color: white;
-    font-size: 2rem;
+    font-size: 3rem;
     padding:0.3rem;
 }
 .section2 p{
@@ -384,7 +396,7 @@ header .infoHeader button:hover{
     color: #286ebf; 
     text-align:center;
     margin:2.5rem;
-    font-size:2rem;
+    font-size:3rem;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
 }
 @keyframes cambio {
@@ -403,14 +415,17 @@ header .infoHeader button:hover{
 }
 .section2 .planes{
     display:flex;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
+    width: 70%;
 }
 .section2 .planes img{
     cursor: pointer;
     box-shadow: 1px 2px 4px 1px rgba(0, 0, 0, 0.2);
-    width: 19.7rem;
-    height: 12rem;
-    margin-right: 3rem;
+    width: 100%;
+    height: 10%;
+    margin-bottom: 3rem;
 }
 
 .section2 .detalles{
@@ -420,7 +435,7 @@ header .infoHeader button:hover{
     border:0;
     color:white;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.2rem;
+    font-size: 2rem;
     margin-top:2rem;
     margin-bottom: 7rem;
 }
@@ -428,6 +443,7 @@ header .infoHeader button:hover{
 .seccion3{
     background-color: #00cabe;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     padding: 3rem;
@@ -449,13 +465,7 @@ header .infoHeader button:hover{
     margin: 3rem;
 }
 
-.seccion3 .menuDesple ul i{
-    background-color: #0000001e;
-    width: 1.5rem;
-    height: 1.3rem;
-    text-align: center;
-    color:black;
-}
+
 .seccion3 .menuDesple{
     display: flex;
     flex-direction: column;
@@ -464,14 +474,21 @@ header .infoHeader button:hover{
 .seccion3 .menuDesple h2{
     color: white;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 2rem;
+    font-size: 3rem;
     padding: 1rem 0;
 }
 .seccion3 .menuDesple p{
     color:white;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 1.5rem 0;
+}
+.seccion3 .menuDesple ul i{
+    background-color: #0000001e;
+    width: 1.5rem;
+    height: 1.3rem;
+    text-align: center;
+    color:black;
 }
 .seccion3 .menuDesple ul ul{
     display: none;
@@ -480,7 +497,7 @@ header .infoHeader button:hover{
     list-style: none;
     color:white;
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     cursor: pointer;
     border-bottom: 0.1rem solid white;
     display: flex;
@@ -499,53 +516,56 @@ header .infoHeader button:hover{
     color: #286ebf; 
 }
 .section4{
-    padding: 5rem 10rem 1rem 10rem;;
+    padding: 2rem;
 }
 .section4 h2{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
     color: #286ebf;
     text-align: center;
-    font-size: 2rem;
+    font-size: 3rem;
     margin:3rem 0;
 }
 .section4 p,
 .section4 strong{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     text-align: center;
 }
 
 .section4 .containerSec4{
     display: grid;
-    grid-template-columns: auto 67%;
+    grid-template-columns: auto;
     grid-template-rows: auto;
     margin: 3rem 0;
 }
 
 .section4 .containerSec4 .info{
+    width: 100%;
     grid-column: 1/2;
     grid-row: 1/2;
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 .section4 .containerSec4 .info div{
     background-color: whitesmoke;
-    width: 25rem;
+    width: 100%;
     border-bottom: 0.1rem solid #a6a6a6;
     border-bottom-style: dotted; 
-    height: 10rem;
+    height: 20rem;
     padding: 1rem;
 }
 
 .section4 .containerSec4 .info div h3,
 .section4 .containerSec4 .info div p{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
-    font-size: 1.5rem;
+    font-size: 3rem;
     padding: 1rem;
 }
 .section4 .containerSec4 .imgBoton{
-    grid-column: 2/3;
-    grid-row: 1/2;
+    width: 100%;
+    grid-column: 1/2;
+    grid-row: 2/3;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -580,4 +600,247 @@ footer p{
     font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
     font-size: 1.2rem;
     margin: 0 1.5rem;
+}
+
+@media (min-width:550px){
+    *{
+        font-size: 9px;
+    }
+        header nav{
+        height: 7%;
+    }
+        .section2 .planes img{
+        width: 70%;
+    }
+}
+@media(min-width: 760px){
+    *{
+        font-size: 9px;
+    }
+    header nav{
+        height: 7%;
+    }
+    .sticky img{
+        width: 10%;
+    }
+    .section2 .planes img{
+        width: 70%;
+    }
+    .section4 .containerSec4 .info div{
+        width: 70%;
+    }
+    .section4 .containerSec4 .imgBoton img{
+        width:72%;
+        height: 35rem;
+    }
+}
+@media(min-width:1024px){
+   *{
+        font-size: 10px;
+    }
+    header nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        height: 10%;
+        padding: 0 ;
+    }
+    
+    header nav .nav-side{
+        position: static;
+        background: none;
+        display: flex;
+        flex-direction: row;
+        justify-content: right;
+        align-items: center;
+        list-style: none;
+        padding: 0;
+        transform: translateX(0);
+    }
+    header nav ul a,
+    header nav ul li{
+        text-decoration: none;
+        font-family: "Gill Sans Extrabold", Helvetica, sans-serif; 
+        color: #1f408f;
+        font-size: 1.5rem;
+        font-weight: bold;
+        padding: 0 0.2rem;
+    }
+    header nav i{
+        font-size: 2rem;
+        color: #2e61da;
+        cursor:pointer;
+        margin: 0.5rem;
+    }
+
+    .sticky{
+        background-color: #286ebf;
+        height: 7%;
+    }
+    .sticky ul li{
+        color:white;
+        font-size: 1.3rem;
+        font-weight: bold;
+    }
+    .sticky img{
+        width:15%;
+    }
+    header nav #sideButton{
+        position: absolute;
+        transform: translateX(-50px)
+    }
+    .section1 .imagenText img{
+        width: 50%;
+    }
+    
+    .section1 .imagenText div{
+        width: 50%
+    }
+    
+    .section1 .imagenText div p,
+    .section1 .imagenText div strong{
+        text-align: justify;
+        font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+        font-size:1.5rem;
+        color: black;
+    }
+    .section1 .imagenText div p a{
+        font-size:1.5rem;
+    } 
+    .section1 .imagenText div .menuDesplegable li{ 
+        width: 100%;
+        height: 2rem;
+    }
+    .section1 .menuDesplegable a{
+        font-size: 1.5rem;
+    }
+    .section1 .imagenText div .menuDesplegable i{
+        font-size: 1rem;
+        width: 2rem;
+        height: 2rem;
+    }
+    .section2 .planes{
+        flex-direction: row;
+        width: 100%;
+    }
+    .section2 .planes img{
+        width: 25%;
+        margin-bottom: 3rem;
+        margin-right: 2rem;
+    }
+    .seccion3 .menuDesple p,
+    .seccion3 .menuDesple ul li{
+        font-size: 2rem;
+        padding-bottom: 1rem;
+    }
+    .section4 p,
+    .section4 strong,
+    .section4 h2{
+        font-size: 2rem;
+        margin:2rem 0;
+    }
+    .section4 .containerSec4{
+        justify-items: center;
+    }
+    .section4 .containerSec4{
+        width: 90%;
+    }
+    .section4 .containerSec4 .info{
+        justify-self: end;
+        width: 80%;
+        height: 40%;
+    }
+    .section4 .containerSec4 .info div{
+        width: 100%;
+        height: 20rem;
+        padding: 1rem;
+    }
+    .section4 .containerSec4 .imgBoton{
+        width: 100%;
+        grid-column: 2/3;
+        grid-row: 1/2;
+        justify-self: start;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .section4 .containerSec4 .imgBoton img{
+        width: 100%;
+        height:30rem;
+    }
+    .section4 .containerSec4 .info div h3,
+    .section4 .containerSec4 .info div p{
+        font-size: 1.5rem;
+        padding: 1rem;
+    }
+}
+@media(min-width:1280px){
+    *{
+        font-size: 13px;
+    }
+    header nav{
+        height: 13%;
+    }
+    header nav .nav-side{
+    position: static;
+    transform: translateX(0);
+    }
+    .sticky{
+        height: 10%;
+    }
+    header .infoHeader{
+        width: 50%;
+        height: 100%;
+        padding: 4rem;
+    }
+    header .infoHeader h1{
+        font-size: 4rem;
+    }
+
+    header .infoHeader h2{
+        font-size: 3rem;
+    }
+
+    header .infoHeader p{
+        font-size: 2.5rem;
+    }
+    .section1 .imagenText img{
+        width: 40%;
+    }
+    
+    .section1 .imagenText div{
+        width: 60%
+    }
+    
+    .section1 .imagenText div p,
+    .section1 .imagenText div strong{
+        text-align: justify;
+        font-family: "Gill Sans Extrabold", Helvetica, sans-serif;
+        font-size:2rem;
+        color: black;
+    }
+    .section1 .imagenText div p a{
+        font-size:2rem;
+    } 
+    .section1 .imagenText div .menuDesplegable li{ 
+        width: 100%;
+        height: 2rem;
+    }
+    .section1 .menuDesplegable a{
+        font-size: 2rem;
+    }
+    .section2 .planes img{
+        width: 25%;
+    }
+    .seccion3 {
+        flex-direction: row;
+    }
+    .seccion3 .menuDesple h2{
+        font-size: 2.5rem;
+    }
+    .seccion3 .menuDesple p,
+    .seccion3 .menuDesple ul li{
+        font-size: 2rem;
+        padding-bottom: 0.5rem;
+    }
 }
